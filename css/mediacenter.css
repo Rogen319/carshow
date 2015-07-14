@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+#show_status {
+    width: 940px;
+    margin: 20px 0 0 0;
+    height: 240px;
+}
+
+#show_nav {
+	float: left;
+	margin-top: 20px;
+	width: 30%;	
+}
+
+#text {
+	float:right;
+	width: 54%;
+	height: 100%;
+	font-size: 14px;
+}
+
+#text span{
+	color: #333;
+	font-weight: bold;
+	font-size: 16px;	
+}
+.my_header4{
+	width: 100%;
+	height:35px;
+	margin-bottom: 10px;
+	border-bottom: medium solid #99CCFF;
+}
+.my_header4 .info4 {
+	float:left;
+}
+
+.my_header4 .info4 img{	
+	vertical-align:middle
+}
+.my_header4 #my_title4{
+	font-size:18px;
+	vertical-align:middle;
+	color:#999999;
+	padding-left:10px;
+	letter-spacing:9px;
+  	font-weight: bold;
+  	text-align: center;
+}
+
+.my_header4 .mr4 {
+	float:right;
+	position:relative;
+	top:3px;
+}
+
+.my_header4 .mr4 a {
+    color: #999999;
+}
+
+.my_header4 .mr4 a:hover {
+    color: #99CCFF;
+}
+
+#hzmtbar #hzmt {
+    margin: 35px 0 0 0;
+}
+
+#hzmtbar #hzmt td {
+    padding: 5px;
+    text-align: center;
+}
+
+#hzmtbar #hzmt img {
+    width: 120px;
+    height: 50px;
+}
+
+#photos{
+	width: 940px;
+    margin: 15px 0 0 0;	
+}
+
+div.subnav_mainnode {
+    border-bottom: #c7c7c7 1px solid;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+div.subnav_mainnode a {
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    display: inline-block;
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0px;
+}
+
+ul.subnav {
+    padding-bottom: 0px;
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    list-style-image: none;
+    padding-top: 0px;
+}
+
+.subnav {
+    font-weight: normal;
+}
+
+ul.subnav li {
+    border-bottom: #c7c7c7 1px solid;
+    padding-bottom: 3px;
+    line-height: 2em;
+    margin: 1px 0px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+ul.subnav li a {
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    display: inline-block;
+    color: #333;
+    padding-top: 0px;
+}
+
+ul.subnav li a:hover {
+	color: #99CCFF;	
+}
+
+#inflist{
+	padding: 0px;	
+}
+#inflist li {
+    line-height: 180%;
+    margin: 3px 0;
+    background: url(../image/dot3.jpg) no-repeat 0 6px;
+    padding-left: 12px;
+    list-style: none;
+}
+
+#inflist li span {
+    float: right !important;
+    color: #999;
+    margin-left: 15px;
+}
+
+/*@media screen, projection*/
+#inflist a {
+    text-decoration: underline !important;
+    color: #2ba0d1 !important;
+}
