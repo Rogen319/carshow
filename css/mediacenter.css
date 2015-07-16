@@ -28,7 +28,7 @@
 	width: 100%;
 	height:35px;
 	margin-bottom: 10px;
-	border-bottom: medium solid #99CCFF;
+	border-bottom: medium solid #0E419C;
 }
 .my_header4 .info4 {
 	float:left;
@@ -40,7 +40,7 @@
 .my_header4 #my_title4{
 	font-size:18px;
 	vertical-align:middle;
-	color:#999999;
+	color:#0E419C;
 	padding-left:10px;
 	letter-spacing:9px;
   	font-weight: bold;
@@ -54,11 +54,11 @@
 }
 
 .my_header4 .mr4 a {
-    color: #999999;
+    color: #0E419C;
 }
 
 .my_header4 .mr4 a:hover {
-    color: #99CCFF;
+    color: #FF9900;
 }
 
 #hzmtbar #hzmt {
@@ -71,12 +71,14 @@
 }
 
 #hzmtbar #hzmt img {
-    width: 120px;
+    width: 180px;
     height: 50px;
+	margin-right: 30px;
 }
 
 #photos{
 	width: 940px;
+	height: 380px;
     margin: 15px 0 0 0;	
 }
 
@@ -149,12 +151,12 @@ ul.subnav li a:hover {
 
 #inflist li span {
     float: right !important;
-    color: #999;
+    color: #0E419C;
     margin-left: 15px;
 }
 
 /*@media screen, projection*/
 #inflist a {
     text-decoration: underline !important;
-    color: #2ba0d1 !important;
+    color: #0E419C !important;
 }

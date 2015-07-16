@@ -2,11 +2,12 @@
 /* CSS Document */
 #banner {
     width: 940px;
+	height: 500px;
     margin: 15px 0 0 0;
 }
 
 #czqybar {
-    width: 940px;
+    width: 700px;
     margin: 15px 0 0 0;
     height: 123px;
 }
@@ -21,7 +22,7 @@
 }
 
 #hzmtbar {
-    width: 940px;
+    width: 700px;
     margin: 30px 0 0 0;
     height: 150px;
 }
@@ -38,15 +39,17 @@
 #czqybar #czqy img {
     width: 120px;
     height: 50px;
+	margin-right: 10px;
 }
 
 #hzmtbar #hzmt img {
-    width: 120px;
+    width: 180px;
     height: 50px;
+	margin-right: 30px;
 }
 
 #pagemain {
-    height: 340px;
+    height: 300px;
     width: 940px;
     margin: 15px auto;
     z-index: 100;
@@ -59,10 +62,10 @@
 
 
 .my_header2{
-	width: 700px;
+	width: 940px;
 	height:35px;
 	margin-bottom: 10px;
-	border-bottom: medium solid #99CCFF;
+	border-bottom: medium solid #0E419C;
 }
 .my_header2 .info2 {
 	float:left;
@@ -74,7 +77,7 @@
 .my_header2 #my_title2{
 	font-size:18px;
 	vertical-align:middle;
-	color:#999999;
+	color:#0E419C;
 	padding-left:10px;
 	letter-spacing:9px;
   	font-weight: bold;
@@ -88,11 +91,11 @@
 }
 
 .my_header2 .mr2 a {
-    color: #999999;
+    color: #0E419C;
 }
 
 .my_header2 .mr2 a:hover {
-    color: #99CCFF;
+    color: #FF9900;
 }
 
 #pagemain .news #textdiv1 {
@@ -105,63 +108,13 @@
 }
 
 #pagemain .news #textdiv1 ul {
-    margin: 0 10px;
-    width: 680px;
+    margin: 0 5px;
+    width: 900px;
 	padding-left: 0px;
     list-style: none;
 }
 
-#pagemain .news #textdiv1 ul li {
-    margin: 3px 0px;
-    background: url(../image/dot.gif) no-repeat 0 8px !important;
-    padding-left: 10px;
-    height: 18px;
-    line-height: 18px;
-}
-
-#pagemain .news #textdiv1 ul li a {
-    color: #333;
-    text-decoration: none;
-    background: none;
-}
-
-#pagemain .news #textdiv1 ul li a:hover {
-    color: #2ba0d1;
-}
-
-#pagemain .news #textdiv1 ul li span {
-    float: right;
-    color: #666;
-}
-
-
-#pagemain #piclist {
-    width: 620px;
-    margin: 20px auto 0 20px;
-    padding: 0;
-}
-
-#pagemain #piclist ul {
-    list-style: none;
-    margin: 0;
-}
-
-#pagemain #piclist ul li {
-    float: left;
-    margin: 0;
-    height: 90px;
-    width: 124px;
-    text-align: center;
-    padding: 0;
-}
-
-#pagemain #piclist img {
-    width: 120px;
-    height: 90px;
-    border: 2px solid #fff;
-}
-
-#pagemain .download{
+.download{
 	float:right;
 	width:210px;
 }
@@ -170,7 +123,7 @@
 	width: 210px;
 	height:35px;
 	margin-bottom: 10px;
-	border-bottom: medium solid #99CCFF;
+	border-bottom: medium solid #0E419C;
 }
 .my_header3 .info3 {
 	float:left;
@@ -182,7 +135,7 @@
 .my_header3 #my_title3{
 	font-size:18px;
 	vertical-align:middle;
-	color:#999999;
+	color:#0E419C;
 	padding-left:10px;
 	letter-spacing:9px;
   	font-weight: bold;
@@ -191,11 +144,11 @@
 
 #pagehero_t1 {
     width: 210px;
-    height: 270px;
+    height: 440px;
 }
 
 .colored {
-   background: #99CCFF;
+   background: #0E419C;
 }
 
 a.NButton {
@@ -227,15 +180,14 @@ a.NButton {
 }
 
 .teaser.colored a.NButton div {
-    border-bottom: #002e31 1px solid;
-    border-left: #002e31 1px solid;
-    background: #66CCFF repeat-x 0px -280px;
-    border-top: #002e31 1px solid;
-    border-right: #002e31 1px solid;
+    border-bottom: #002e31 2px solid;
+    border-left: #002e31 2px solid;
+    border-top: #002e31 2px solid;
+    border-right: #002e31 2px solid;
 }
 
 .teaser a.NButton:hover div {
-    background: #6699CC repeat-x 0px -420px;
+    background: #003399 repeat-x 0px -420px;
 }
 
 
@@ -249,3 +201,61 @@ a.NButton {
     padding-top: 0px;
 }
 
+.teaser.colored a.NButton div span:hover{
+	color: #FF9900 !important;
+}
+.newslist {
+  margin: 0 5px;
+  padding-bottom: 40px;
+  margin-bottom: 14px;
+}
+
+.newslist li {
+  float: left;
+  _display: inline;
+  width: 300px;
+  margin: 0;
+}
+
+.ydate_2 {
+  border: 1px solid #edeaf1;
+  color: #5b317d !important;
+  background: #edeaf1;
+}
+
+.ydate {
+  width: 58px;
+  border: 1px solid #d8d8d8;
+  color: #7d7d7d;
+  text-align: center;
+  font-size: 12px;
+  float: left;
+  _display: inline;
+  padding-bottom: 5px;
+}
+
+.ydate span {
+  display: block;
+  color: #5b317d;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 8px 0 2px 0;
+  zoom: 1;
+}
+
+.newslist .tn {
+  margin-left: 70px;
+  width: 220px;
+  _width: 217px;
+}
+
+.newslist h3 a {
+  color: #22132D;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.newslist p {
+  color: #777;
+  padding-top: 8px;
+}

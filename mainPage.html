@@ -11,7 +11,7 @@
 	<script type="text/javascript">
 		jQuery(function($){
 			$(".flexslider").flexslider({
-				slideshowSpeed: 3000, //展示时间间隔ms
+				slideshowSpeed: 4000, //展示时间间隔ms
 				animationSpeed: 400, //滚动时间ms
 				pauseOnHover: true,
 				touch: true //是否支持触屏滑动
@@ -28,7 +28,9 @@
 
 <!-- logo和标题 -->
 <div id="head">
-
+ <div id="logo"></div>
+ <div id="show_title"> <span id="time">2016</span><span id="title_text">第二届上海国际汽车灯具展览会暨第十一届汽车灯具产业发展论坛<br /> </span>
+ <span id="title_english">(2 nd Shanghai International Auto Lamp Exhibition and the 11th Auto Lamp Industry Development Forum)</span></div>
 
 </div>
 
@@ -40,64 +42,78 @@
 <div id="page_nav">
 
 <ul>
- <li class="home"><A  href="mainpage.html" style="background: #66CCFF;"><IMG src="image/home.png" /> </A></li>
+ <li class="home"><A  href="mainpage.html"><IMG src="image/home.png" /> </A></li>
       
-    <Li class="mainlevel"  id="mainlevel_01"><A class="topnav-btn" href="showinformation.html">展会信息</A> 
+    <Li class="mainlevel"  id="mainlevel_01">
+    <A class="topnav-btn" href="showinformation.html">展会信息</A> 
+    <a href="#" class="flyout-toggle"></a>
     <div class="clear"></div>
     <UL>
       <LI><a href="">展会介绍</a></LI>
-      <LI><a href="">我要参展</a></LI>
-      <LI><A href="">展品范围</a></LI>
-  
-      <LI><a href="">网上展厅</a></LI>
-      <LI><a href="">国际展团</a></LI>
-		<LI><a href="">展商服务系统</a></LI>
+      <LI><a href="">展位图</a></LI>
+      <LI><A href="">参展方案</a></LI>
+      <LI><a href="">参展企业</a></LI>
       </UL></Li>
 
- <Li class="mainlevel"  id="mainlevel_01"><A href="luntaninfo.html" class="topnav-btn">论坛信息</A>
+ <Li class="mainlevel"  id="mainlevel_01">
+    <A class="topnav-btn" href="showinformation.html">参会观展</A> 
+    <a href="#" class="flyout-toggle"></a>
+    <div class="clear"></div>
+    <UL>
+      <LI><a href="">展位图</a></LI>
+      <LI><a href="">交通指南</a></LI>
+      <LI><A href="">酒店信息</a></LI>
+      <LI><a href="">下载中心</a></LI>
+      </UL></Li>
+      
+ <Li class="mainlevel"  id="mainlevel_01">
+ <A href="luntaninfo.html" class="topnav-btn">论坛信息</A> 
+    <a href="#" class="flyout-toggle"></a>
     <div class="clear"></div>
     <UL>
       <LI><A href="">论坛介绍</a></LI>
-      <LI><A href="">赞助单位</a></LI>
+      <LI><A href="">下载中心</a></LI>
+      <LI><A href="">赞助方案</a></LI>
+      <LI><A href="">论文征集</a></LI>
       </UL>
       </Li>
       
-    <Li class="mainlevel"  id="mainlevel_03"><A href="mediacenter.html" class="topnav-btn">媒体中心</A> 
+    <Li class="mainlevel"  id="mainlevel_03">
+    <A href="mediacenter.html" class="topnav-btn">媒体中心</A>  
+    <a href="#" class="flyout-toggle"></a>
     <div class="clear"></div>
     <UL>
       <LI><a href="">展会动态</a></LI>
-
-      <LI><a href="">下载中心</a></LI>
-      
       <LI><a href="">合作媒体</a></LI>
       <LI><a href="">现场照片</a></LI>
-      <LI><a href="" target="_blank">官方微博</a></LI>
       
   </UL>
   </Li>
   
-  <LI  class="mainlevel"  id="mainlevel_01"><A href="showconclude.html" class="topnav-btn">展会总结</A>
+  <LI  class="mainlevel"  id="mainlevel_01">
+  <A href="showconclude.html" class="topnav-btn">展会总结</A> 
+    <a href="#" class="flyout-toggle"></a>
   <div class="clear"></div>
   <ul>
-        <li><a href="">会后总结</a></li>   
-        <li><a href="">全体大会</a></li>    
-      <LI><A href="">专题分会</a></LI>
-      <LI><A href="">技术分会</a></LI>
-      <LI><A href="">并行会议</a></LI>
+        <li><a href="">展会内容</a></li>   
+        <li><a href="">展会照片</a></li>
 </ul>
   </LI> 
 
   
-      <Li class="mainlevel"  id="mainlevel_01"><A class="topnav-btn" href="showreview.html">往届回顾</A> 
+      <Li class="mainlevel"  id="mainlevel_01">
+      <A class="topnav-btn" href="showreview.html">往届回顾</A>  
+    <a href="#" class="flyout-toggle"></a>
       <div class="clear"></div>
     <UL>
-    <LI><a href="">展览回顾</a></LI> 
-	<LI><a href="">年会回顾</a></LI> 
+    <LI><a href="">展会回顾</a></LI> 
 
 
       </UL></Li>
       
-    <LI class="last"><A href="contact.html" class="topnav-btn2">联系我们</A></LI>
+    <LI class="last">
+    <A href="contact.html" class="topnav-btn2">联系我们</A>
+    </LI> 
     </UL>
 
 </div>
@@ -121,78 +137,18 @@
 <!-- 主画面 -->
 <div class="subnavindex" id="banner">
 
-<div class="flexslider" style="width:940px;">
+<div class="flexslider" style="width:700px;">
 <ul class="slides">
     <li><a href=""><img src="image/banner/banner1.jpg"></a></li>
     <li><a href=""><img src="image/banner/banner2.jpg"></a></li>
     <li><a href=""><img src="image/banner/banner3.jpg"></a></li>
     <li><a href=""><img src="image/banner/banner4.jpg"></a></li>
     <li><a href=""><img src="image/banner/banner5.jpg"></a></li>
+    <li><a href=""><img src="image/banner/banner6.jpg"></a></li>
+    <li><a href=""><img src="image/banner/banner7.jpg"></a></li>
 </ul>
 </div>
-                
-</div>
-
-<!-- 最新动态列表和下载中心 -->
-<div id="pagemain">
-
-<div class="news">
-
-<div class="my_header2">
-
-<div class="info2"><img src="image/plus.png" /><span id="my_title2">相关动态</span></div>
-<div  class="mr2"><a href="">>> 更多新闻</a></div>
-
-</div>
   
-<div id="textdiv1" nowrap="" style="width: 700px; height: 140px; overflow: hidden; -ms-overflow-x: hidden; -ms-overflow-y: hidden;">
-<ul>
-<li><span>2015-03-31</span><a title="关于“2015中国汽车工程学会年会暨展览会”征文截止日期延期通知" href="">关于“2015中国汽车工程学会年会暨展览会”征文截止日期延期通知</a> <img src="image/new.gif"></li>
-<li><span>2015-03-24</span><a title="2015中国汽车工程学会年会暨展览会征文及演讲邀请通知" href="">2015中国汽车工程学会年会暨展览会征文及演讲邀请通知</a> <img src="image/new.gif"></li>
-<li><span>2015-01-03</span><a title="2014 SAECCE成功举办" href="">2014 SAECCE成功举办</a></li>
-<li><span>2014-11-10</span><a title="富士通半导体携新品亮相中国汽车工程学会年会暨展览会" href="">富士通半导体携新品亮相中国汽车工程学会年会暨展览会</a></li>
-<li><span>2014-11-10</span><a title="VAMA亮相SAECCE吸引主机厂关注" href="">VAMA亮相SAECCE吸引主机厂关注</a></li>
-<li><span>2014-11-10</span><a title="SAECCE2014 全力打造中国第一汽车技术交流展示平台" href="">SAECCE2014 全力打造中国第一汽车技术交流展示平台</a></li>
-<li><span>2015-01-03</span><a title="2014 SAECCE成功举办" href="">2014 SAECCE成功举办</a></li>
-<li><span>2014-11-10</span><a title="富士通半导体携新品亮相中国汽车工程学会年会暨展览会" href="">富士通半导体携新品亮相中国汽车工程学会年会暨展览会</a></li>
-<li><span>2014-11-10</span><a title="VAMA亮相SAECCE吸引主机厂关注" href="">VAMA亮相SAECCE吸引主机厂关注</a></li>
-<li><span>2014-11-10</span><a title="SAECCE2014 全力打造中国第一汽车技术交流展示平台" href="">SAECCE2014 全力打造中国第一汽车技术交流展示平台</a></li>
-</ul> 
-</div>
- 
-<script defer>new Marquee("textdiv1",0,1,700,140,50,0,2000,24)</script>
-<script type="text/javascript" >
-var jq2 = jQuery.noConflict(); 
-jq2(document).ready(function(){
-
-jq2('#imglist').bxSlider({
-auto: true, 
-pager: false,	
-displaySlideQty: 5,  //显示数量
-moveSlideQty: 5 //切换数量
-   });
-});
-
-</script>
-
-
-<div id="piclist">
-<ul id="imglist">
-<li><a href=""><img src="image/news/1030.jpg"/></a></li>  
-<li><a href=""><img src="image/news/1029.jpg"/></a></li>  
-<li><a href=""><img src="image/news/1028.jpg"/></a></li>  
-<li><a href=""><img src="image/news/1027.jpg"/></a></li>  
-<li><a href=""><img src="image/news/1026.jpg"/></a></li>  
-<li><a href=""><img src="image/news/1024.jpg"/></a></li>  
-<li><a href=""><img src="image/news/1023.jpg"/></a></li>  
-<li><a href=""><img src="image/news/1022.jpg"/></a></li>  
-<li><a href=""><img src="image/news/1021.jpg"/></a></li>  
-<li><a href=""><img src="image/news/1020.jpg"/></a></li>  
-</ul> 
-</div>
-
-</div>
-
 <div class="download">
 
 <div class="my_header3">
@@ -212,6 +168,63 @@ moveSlideQty: 5 //切换数量
   
 </div>  
   
+                
+</div>
+
+<!-- 最新动态列表和下载中心 -->
+<div id="pagemain">
+
+<div class="news">
+
+<div class="my_header2">
+
+<div class="info2"><img src="image/plus.png" /><span id="my_title2">新闻动态</span></div>
+<div  class="mr2"><a href="">>> 更多新闻</a></div>
+
+</div>
+  
+ <div id="textdiv1" nowrap="" style="width: 940px; height: 200px; overflow: hidden; -ms-overflow-x: hidden; -ms-overflow-y: hidden;">
+
+<ul class="newslist clearfix" id="newthu_news">                    
+<li><div class="ydate ydate_2" id="div_ydate_1"><span>14</span>2015.07</div><div class="tn"><h3>
+<a href="http://news.tsinghua.edu.cn/publish/news/4204/2015/20150714191441842632889/20150714191441842632889_.html" target="_blank">第二届上海国际汽车灯具展览会暨第十一届汽车灯具会邀请</a></h3>
+<p id="news_summary_1">2015年3月26-27日，第一届上海国际汽车灯具展览会暨汽车灯具产业发展论坛在上海安亭汽车会展中心隆重举行。展会由......</p></div></li> 
+<li><div class="ydate ydate_2" id="div_ydate_1"><span>14</span>2015.07</div><div class="tn"><h3>
+<a href="http://news.tsinghua.edu.cn/publish/news/4204/2015/20150714191441842632889/20150714191441842632889_.html" target="_blank">第二届上海国际汽车灯具展览会暨第十一届汽车灯具会邀请</a></h3>
+<p id="news_summary_1">2015年3月26-27日，第一届上海国际汽车灯具展览会暨汽车灯具产业发展论坛在上海安亭汽车会展中心隆重举行。展会由......</p></div></li>  
+<li><div class="ydate ydate_2" id="div_ydate_1"><span>14</span>2015.07</div><div class="tn"><h3>
+<a href="http://news.tsinghua.edu.cn/publish/news/4204/2015/20150714191441842632889/20150714191441842632889_.html" target="_blank">第二届上海国际汽车灯具展览会暨第十一届汽车灯具会邀请</a></h3>
+<p id="news_summary_1">2015年3月26-27日，第一届上海国际汽车灯具展览会暨汽车灯具产业发展论坛在上海安亭汽车会展中心隆重举行。展会由......</p></div></li>  
+<li><div class="ydate ydate_2" id="div_ydate_1"><span>14</span>2015.07</div><div class="tn"><h3>
+<a href="http://news.tsinghua.edu.cn/publish/news/4204/2015/20150714191441842632889/20150714191441842632889_.html" target="_blank">第二届上海国际汽车灯具展览会暨第十一届汽车灯具会邀请</a></h3>
+<p id="news_summary_1">2015年3月26-27日，第一届上海国际汽车灯具展览会暨汽车灯具产业发展论坛在上海安亭汽车会展中心隆重举行。展会由......</p></div></li>  
+<li><div class="ydate ydate_2" id="div_ydate_1"><span>14</span>2015.07</div><div class="tn"><h3>
+<a href="http://news.tsinghua.edu.cn/publish/news/4204/2015/20150714191441842632889/20150714191441842632889_.html" target="_blank">第二届上海国际汽车灯具展览会暨第十一届汽车灯具会邀请</a></h3>
+<p id="news_summary_1">2015年3月26-27日，第一届上海国际汽车灯具展览会暨汽车灯具产业发展论坛在上海安亭汽车会展中心隆重举行。展会由......</p></div></li>  
+<li><div class="ydate ydate_2" id="div_ydate_1"><span>14</span>2015.07</div><div class="tn"><h3>
+<a href="http://news.tsinghua.edu.cn/publish/news/4204/2015/20150714191441842632889/20150714191441842632889_.html" target="_blank">第二届上海国际汽车灯具展览会暨第十一届汽车灯具会邀请</a></h3>
+<p id="news_summary_1">2015年3月26-27日，第一届上海国际汽车灯具展览会暨汽车灯具产业发展论坛在上海安亭汽车会展中心隆重举行。展会由......</p></div></li>                        
+</ul>
+
+</div>
+
+<script type="text/javascript" >
+var jq2 = jQuery.noConflict(); 
+jq2(document).ready(function(){
+
+jq2('#newthu_news').bxSlider({
+auto: true, 
+pager: false,	
+displaySlideQty: 3,  //显示数量
+moveSlideQty: 3 //切换数量
+   });
+});
+
+</script>
+</div>
+
+
+  
 </div>
 
 <!-- 参展企业 -->
@@ -228,40 +241,60 @@ moveSlideQty: 5 //切换数量
 <div id="czqy" nowrap="" style="width: 940px; height: 75px; overflow: hidden; -ms-overflow-x: hidden; -ms-overflow-y: hidden;">
 <table style="display: inline; border-collapse: collapse;" cellspacing="0" cellpadding="0">
 <tbody><tr>
-<td><a href="http://www.intest.com.cn" target="_blank"><img src="image/logo/20130717164452_377_small.jpg" alt="武汉英泰斯特电子技术有限公司"/></a></td>
-<td><a href="http://www.agc.com" target="_blank"><img src="image/logo/20130904163545_742_small.jpg" alt="旭硝子株式会社"/></a></td>
-<td><a href="http://www.mitsubishichem-hd.co.jp/english/index.html" target="_blank"><img src="image/logo/20130828173931_805.jpg" alt="三菱化学控股株式会社"/></a></td>
-<td><img src="image/logo/20130917115402_695_small.jpg" alt="李尔公司"/></td>
-<td><img src="image/logo/20130927173344_777.jpg" alt="无锡创科源激光装备股份有限公司"/></td>
-<td><img src="image/logo/20130927180648_952.jpg" alt="赢创工业集团"/></td>
-<td><a href="www.pansino.com.cn" target="_blank"><img src="image/logo/20131022113059_282.jpg" alt="北京中科泛华测控技术有限公司"/></a></td>
-<td><a href="www.borgwarner.com" target="_blank"><img src="image/logo/20131022113153_622.png" alt="博格华纳（中国）投资有限公司"/></a></td>
-<td><a href="www.hexagonmetrology.com.cn" target="_blank"><img src="image/logo/20131022114438_472.jpg" alt="海克斯康测量技术（青岛）有限公司"/></a></td>
-<td><a href="www.gfau.com" target="_blank"><img src="image/logo/20140715195431_831_small.JPG" alt="乔治费歇尔汽车中国"/></a></td>
-<td><a href="http://www.eastman.com/" target="_blank"><img src="image/logo/20140320173049_707.JPG" alt="伊士曼化工公司"/></a></td>
-<td><a href="http://www.fev.com/" target="_blank"><img src="image/logo/20140320173335_491.jpg" alt="FEV GmbH"/></a></td>
-<td><a href="http://www.mira.co.uk/" target="_blank"><img src="image/logo/20140320173635_954.JPG" alt="米拉车辆工程技术（上海）有限公司"/></a></td>
-<td><a href="http://www.mubea.com/" target="_blank"><img src="image/logo/20140320174709_162.jpg" alt="慕贝尔汽车部件（太仓）有限公司"/></a></td>
-<td><a href="http://www.iav.com/" target="_blank"><img src="image/logo/20140514161118_839.jpg" alt="艾尔维汽车工程技术（上海）有限公司"/></a></td>
-<td><a href="http://www.zhongdexc.com/" target="_blank"><img src="image/logo/20140514162623_896.jpg" alt="山西中德集团公司"/></a></td>
-<td><a href="http://www.miba.com/" target="_blank"><img src="image/logo/20140716095758_497_small.JPG" alt="米巴精密零部件（中国）有限公司"/></a></td>
-<td><a href="http://www.acsindustries.com/" target="_blank"><img src="image/logo/20141015094414_477.jpg" alt="爱通汽车零部件（上海）有限公司"/></a></td>
-<td><a href="http://www.kc1970.com/" target="_blank"><img src="image/logo/20140514163213_397.PNG" alt="东莞彩龙五金弹簧制造有限公司"/></a></td>
-<td><a href="http://www.benteler.com/" target="_blank"><img src="image/logo/20140514163615_474.jpg" alt="本特勒投资（中国）有限公司"/></a></td>
-<td><a href="http://www.atmcn.com/" target="_blank"><img src="image/logo/20140514163716_895.jpg" alt="安泰科技股份有限公司"/></a></td>
-<td><a href="http://www.fujitsu.com/cn/fss/" target="_blank"><img src="image/logo/20140715193516_429_small.JPG" alt="富士通半导体（上海）有限公司"/></a></td>
-<td><a href="http://www.faurecia.com/" target="_blank"><img src="image/logo/20140514164054_268.png" alt="佛吉亚中国"/></a></td>
-<td><a href="http://www.sh-union.com/" target="_blank"><img src="image/logo/20140514164206_832.gif" alt="优立昂（上海）汽车零部件科技有限公司"/></a></td>
-<td><img src="image/logo/20140514164412_876.jpg" alt="萨帕精密管业（苏州）有限公司"/></td>
-<td><a href="http://www.idiada.cn/" target="_blank"><img src="image/logo/20140514164646_939.jpg" alt="Applus IDIADA"/></a></td>
-<td><a href="http://www.3ds.com/zh" target="_blank"><img src="image/logo/20140715103200_326_small.jpg" alt="达索析统(上海)信息技术有限公司"/></a></td>
-<td><a href="www.magna.com" target="_blank"><img src="image/logo/20140715193855_323_small.JPG" alt="麦格纳国际"/></a></td>
-<td><a href="http://www.eberspaecher.com/" target="_blank"><img src="image/logo/20140514174121_306.png" alt="埃贝赫排气技术（上海）有限公司"/></a></td>
-<td><a href="http://www.continental-corporation.com/" target="_blank"><img src="image/logo/20140514174225_112.png" alt="大陆汽车投资（上海）有限公司"/></a></td>
+<td><a href="http://www.intest.com.cn" target="_blank"><img src="image/logo/logo-optronic.jpg" alt="武汉英泰斯特电子技术有限公司"/></a></td>
+<td><a href="http://www.agc.com" target="_blank"><img src="image/logo/logo-艾默林.jpg" alt="旭硝子株式会社"/></a></td>
+<td><a href="http://www.mitsubishichem-hd.co.jp/english/index.html" target="_blank"><img src="image/logo/logo-爱发科.jpg" alt="三菱化学控股株式会社"/></a></td>
+<td><img src="image/logo/logo-爱加.jpg" alt="李尔公司"/></td>
+<td><img src="image/logo/logo-百康.jpg" alt="无锡创科源激光装备股份有限公司"/></td>
+<td><img src="image/logo/logo-常州科菲.jpg" alt="赢创工业集团"/></td>
+<td><a href="www.pansino.com.cn" target="_blank"><img src="image/logo/logo-大茂伟瑞柯.jpg" alt="北京中科泛华测控技术有限公司"/></a></td>
+<td><a href="www.borgwarner.com" target="_blank"><img src="image/logo/logo-玳纳特.jpg" alt="博格华纳（中国）投资有限公司"/></a></td>
+<td><a href="www.hexagonmetrology.com.cn" target="_blank"><img src="image/logo/logo-法莱新.jpg" alt="海克斯康测量技术（青岛）有限公司"/></a></td>
+<td><a href="www.gfau.com" target="_blank"><img src="image/logo/logo-飞利浦.jpg" alt="乔治费歇尔汽车中国"/></a></td>
+<td><a href="http://www.eastman.com/" target="_blank"><img src="image/logo/logo-佛山照明.jpg" alt="伊士曼化工公司"/></a></td>
+<td><a href="http://www.fev.com/" target="_blank"><img src="image/logo/logo-富乐.jpg" alt="FEV GmbH"/></a></td>
+<td><a href="http://www.mira.co.uk/" target="_blank"><img src="image/logo/logo-富强鑫.jpg" alt="米拉车辆工程技术（上海）有限公司"/></a></td>
+<td><a href="http://www.mubea.com/" target="_blank"><img src="image/logo/logo-硅宝.png" alt="慕贝尔汽车部件（太仓）有限公司"/></a></td>
+<td><a href="http://www.iav.com/" target="_blank"><img src="image/logo/logo-海拉.jpg" alt="艾尔维汽车工程技术（上海）有限公司"/></a></td>
+<td><a href="http://www.zhongdexc.com/" target="_blank"><img src="image/logo/logo-汉高.jpg" alt="山西中德集团公司"/></a></td>
+<td><a href="http://www.miba.com/" target="_blank"><img src="image/logo/logo-杭州之江.jpg" alt="米巴精密零部件（中国）有限公司"/></a></td>
+<td><a href="http://www.acsindustries.com/" target="_blank"><img src="image/logo/logo-豪特.jpg" alt="爱通汽车零部件（上海）有限公司"/></a></td>
+<td><a href="http://www.kc1970.com/" target="_blank"><img src="image/logo/logo-贺利氏.jpg" alt="东莞彩龙五金弹簧制造有限公司"/></a></td>
+<td><a href="http://www.benteler.com/" target="_blank"><img src="image/logo/logo-贺利氏-左边部分.jpg" alt="本特勒投资（中国）有限公司"/></a></td>
+<td><a href="http://www.atmcn.com/" target="_blank"><img src="image/logo/logo-回天.jpg" alt="安泰科技股份有限公司"/></a></td>
+<td><a href="http://www.fujitsu.com/cn/fss/" target="_blank"><img src="image/logo/logo-江苏文光.jpg" alt="富士通半导体（上海）有限公司"/></a></td>
+<td><a href="http://www.faurecia.com/" target="_blank"><img src="image/logo/logo-科光.jpg" alt="佛吉亚中国"/></a></td>
+<td><a href="http://www.sh-union.com/" target="_blank"><img src="image/logo/logo-肯天.jpg" alt="优立昂（上海）汽车零部件科技有限公司"/></a></td>
+<td><a href="http://www.sh-union.com/" target="_blank"><img src="image/logo/logo-昆山富磊.jpg" alt="萨帕精密管业（苏州）有限公司"/></a></td>
+<td><a href="http://www.idiada.cn/" target="_blank"><img src="image/logo/logo-莱宝.jpg" alt="Applus IDIADA"/></a></td>
+<td><a href="http://www.3ds.com/zh" target="_blank"><img src="image/logo/logo-乐普科.jpg" alt="达索析统(上海)信息技术有限公司"/></a></td>
+<td><a href="www.magna.com" target="_blank"><img src="image/logo/logo-雷笛克.jpg" alt="麦格纳国际"/></a></td>
+<td><a href="http://www.eberspaecher.com/" target="_blank"><img src="image/logo/logo-鲁得贝.jpg" alt="埃贝赫排气技术（上海）有限公司"/></a></td>
+<td><a href="http://www.continental-corporation.com/" target="_blank"><img src="image/logo/logo-马瑞利.jpg" alt="大陆汽车投资（上海）有限公司"/></a></td>
+<td><a href="http://www.faurecia.com/" target="_blank"><img src="image/logo/logo-勤达.png" alt="佛吉亚中国"/></a></td>
+<td><a href="http://www.sh-union.com/" target="_blank"><img src="image/logo/logo-上海机动车检测中心.jpg" alt="优立昂（上海）汽车零部件科技有限公司"/></a></td>
+<td><a href="http://www.sh-union.com/" target="_blank"><img src="image/logo/logo-斯瑞特.png" alt="萨帕精密管业（苏州）有限公司"/></a></td>
+<td><a href="http://www.idiada.cn/" target="_blank"><img src="image/logo/logo-四川中物.png" alt="Applus IDIADA"/></a></td>
+<td><a href="http://www.3ds.com/zh" target="_blank"><img src="image/logo/logo-天山新材料.png" alt="达索析统(上海)信息技术有限公司"/></a></td>
+<td><a href="www.magna.com" target="_blank"><img src="image/logo/LOGO-天佑荣金.jpg" alt="麦格纳国际"/></a></td>
+<td><a href="http://www.eberspaecher.com/" target="_blank"><img src="image/logo/logo-统明亮.jpg" alt="埃贝赫排气技术（上海）有限公司"/></a></td>
+<td><a href="http://www.idiada.cn/" target="_blank"><img src="image/logo/logo-瓦克化学.jpg" alt="Applus IDIADA"/></a></td>
+<td><a href="http://www.3ds.com/zh" target="_blank"><img src="image/logo/logo-翔驰.jpg" alt="达索析统(上海)信息技术有限公司"/></a></td>
+<td><a href="www.magna.com" target="_blank"><img src="image/logo/logo-小糸-右边.jpg" alt="麦格纳国际"/></a></td>
+<td><a href="http://www.eberspaecher.com/" target="_blank"><img src="image/logo/logo-小糸左边-1.jpg" alt="埃贝赫排气技术（上海）有限公司"/></a></td>
+<td><a href="http://www.idiada.cn/" target="_blank"><img src="image/logo/logo-新光.jpg" alt="Applus IDIADA"/></a></td>
+<td><a href="http://www.3ds.com/zh" target="_blank"><img src="image/logo/logo-星宇.jpg" alt="达索析统(上海)信息技术有限公司"/></a></td>
+<td><a href="www.magna.com" target="_blank"><img src="image/logo/logo-阳光绿能.jpg" alt="麦格纳国际"/></a></td>
+<td><a href="http://www.eberspaecher.com/" target="_blank"><img src="image/logo/logo-伊之密.jpg" alt="埃贝赫排气技术（上海）有限公司"/></a></td>
+<td><a href="http://www.continental-corporation.com/" target="_blank"><img src="image/logo/logo-英格索兰.jpg" alt="大陆汽车投资（上海）有限公司"/></a></td>
+<td><a href="http://www.eberspaecher.com/" target="_blank"><img src="image/logo/logo-长江涂装.jpg" alt="埃贝赫排气技术（上海）有限公司"/></a></td>
+<td><a href="http://www.continental-corporation.com/" target="_blank"><img src="image/logo/logo-浙江嘉利.png" alt="大陆汽车投资（上海）有限公司"/></a></td>
 </tr></tbody></table>
 </div>
 <script defer>new Marquee("czqy",2,1,940,75,20,0,0)</script>
 </div>
+
+
 
 <!-- 合作媒体 -->
 <div id="hzmtbar">
@@ -272,36 +305,12 @@ moveSlideQty: 5 //切换数量
 </div>
 
 <div id="hzmt">
-<table><tr>
-<td><a href="http://www.eeworld.com.cn/" target="_blank"><img src="image/meiti/6.png" alt="电子工程世界"/></a></td>
-<td><a href="http://www.caam.org.cn/news/qczh/" target="_blank"><img src="image/meiti/7.jpg" alt="汽车纵横"/></a></td>
-<td><a href="http://company.gg-led.com/" target="_blank"><img src="image/meiti/8.jpg" alt="高工电动车"/></a></td>
-<td><a href="http://www.evdays.com/" target="_blank"><img src="image/meiti/5.jpg" alt="电动汽车时代"/></a></td>
-<td><a href="http://www.yanfabu.com/" target="_blank"><img src="image/meiti/4.jpg" alt="RD"/></a></td>
-<td><img src="image/meiti/20141011123742_285_small.jpg" alt="汽车供应商"/></td>
-<td><img src="image/meiti/20141011124105_509_small.jpg" alt="新能源汽车新闻"/></td>
-<td><a href="http://www.auto-biz.cn/" target="_blank"><img src="image/meiti/20141011123511_185_small.jpg" alt="汽车财经"/></a></td>
-<td><a href="http://www.autoqing.com/ " target="_blank"><img src="image/meiti/20141009164640_564.gif" alt="车擎网"/></a></td>
-<td><a href="http://www.indiaexportnews.com/ " target="_blank"><img src="image/meiti/20140918102800_992.jpg" alt="India Export News"/></a></td>
-<td><a href="http://www.autochina360.com/ " target="_blank"><img src="image/meiti/20140918102950_275.jpg" alt="中国汽车咨询中心网"/></a></td>
-<td><a href="http://www.auto1950.com" target="_blank"><img src="image/meiti/20140910104906_339.jpg" alt="汽车工艺师"/></a></td>
-<td><a href="http://auto.sohu.com/" target="_blank"><img src="image/meiti/20140905154426_371.jpg" alt="搜狐汽车"/></a></td>
-<td><a href="http://www.qichecailiao.com/ " target="_blank"><img src="image/meiti/20140827152445_147.png" alt="中国汽车材料网"/></a></td>
-<td><a href="http://www.autolightweight.com/portal.php" target="_blank"><img src="image/meiti/20140827152709_159.png" alt="汽车轻量化在线"/></a></td>
-<td><a href="http://www.china-nengyuan.com/" target="_blank"><img src="image/meiti/20140821110801_623.jpg" alt="中国新能源网"/></a></td>
-<td><a href="http://www.zaoche168.com/" target="_blank"><img src="image/meiti/20140822103112_245.jpg" alt="造车网"/></a></td>
-<td><a href="http://www.cicmag.com" target="_blank"><img src="image/meiti/20140812105248_476.jpg" alt="中国集成电路"/></a></td>
-<td><a href="http://www.auto-made.com" target="_blank"><img src="image/meiti/20140818172122_114_small.jpg" alt="汽车制造网"/></a></td>
-<td><a href="http://www.qctester.com/" target="_blank"><img src="image/meiti/20140515105014_181.jpg" alt="QC检测仪器网"/></a></td>
-<td><a href="http://cn.gasgoo.com/" target="_blank"><img src="image/meiti/20130621134039_615_small.jpg" alt="盖世汽车网"/></a></td>
-<td><a href="http://auto.sina.com.cn/" target="_blank"><img src="image/meiti/20130614115831_695.jpg" alt="新浪汽车"/></a></td>
-<td><a href="http://cn.industrysourcing.com/industry/automotive.aspx" target="_blank"><img src="image/meiti/20130614120047_243.gif" alt="汽车工程"/></a></td>
-<td><a href="http://qcjs.faw.com.cn/CN/volumn/home.shtml" target="_blank"><img src="image/meiti/20130608162446_710.jpg" alt="汽车技术"/></a></td>
-<td><img src="image/meiti/20130608094650_389.jpg" alt="汽车工艺与材料"/></td>
-<td><a href="http://www.qclbjzz.com/index.asp" target="_blank"><img src="image/meiti/20130510111005_503.jpg" alt="汽车零部件"/></a></td>
-<td><a href="http://auto.vogel.com.cn/s_index.html" target="_blank"><img src="image/meiti/20130510111217_730.jpg" alt="AI汽车网"/></a></td>
-<td><a href="http://auto.vogel.com.cn/s_index.html" target="_blank"><img src="image/meiti/20130510114246_381.jpg" alt="AI汽车制造业"/></a></td>
-<td><a href="http://www.cnautonews.com/" target="_blank"><img src="image/meiti/20130510152548_227.jpg" alt="中国汽车报"/></a></td>
+<table>
+<tr>
+<td><a href="http://www.eeworld.com.cn/" target="_blank"><img src="image/meiti/汽车轻量化在线--1.jpg" alt="电子工程世界"/></a></td>
+<td><a href="http://www.caam.org.cn/news/qczh/" target="_blank"><img src="image/meiti/20140905154426_371.jpg" alt="汽车纵横"/></a></td>
+<td><a href="http://company.gg-led.com/" target="_blank"><img src="image/meiti/中华汽配网LOGO.jpg" alt="高工电动车"/></a></td>
+<td><a href="http://www.evdays.com/" target="_blank"><img src="image/meiti/照明中国网logo转路径.jpg" alt="电动汽车时代"/></a></td>
 </tr>
 </table>
 </div>
@@ -314,14 +323,11 @@ moveSlideQty: 5 //切换数量
 
 <div class="my_header">
 <div class="info"><img src="image/plus.png" /><span id="my_title">主办方 & 支持单位</span></div>
-<div class="mr"><a href="">>> 更多</a></div>
+<div class="mr"><a href="">>> 更多单位</a></div>
 </div>
 
 <div style="float: left; margin: 20px;">
-<a href="http://www.sae-china.com" target="_blank"><img src="image/FKM_Logo_d.gif"></a></div>
-<div style="float: right; margin: 20px;">
-<a href="http://www.nm-china.com.cn" target="_blank"><img src="image/LogoNMjpg.png"></a>
-</div>
+<a href="http://www.sae-china.com" target="_blank"><img src="image/zhubanfang.jpg"></a></div>
 <div class="clear"></div>
 </div>
 
@@ -329,14 +335,12 @@ moveSlideQty: 5 //切换数量
 </div>
 
 
-
-
 <!-- 联系我们，友情链接 -->
 <div id="footer">
 <div id="Copyright" role="contentinfo">
 <div class="wrapper">
 <div id="link" style="text-align:center";>
-<span style="color:#999999";>友情链接:</span><a href="" style="color:#999999";>中国汽车工程学会</a>|<a href="" style="color:#999999";>纽伦堡国际博览集团</a>|<a href="" boss="footer_weiboVip" style="color:#999999";>站长统计</a>|<a href="mainpage.html" boss="footer_adtqqcom" style="color:#999999";>网站首页</a>|<a href="contact.html" style="color:#999999";>联系我们</a>
+<span style="color:#999999";>友情链接:</span><a href="" boss="footer_weiboVip" style="color:#999999";>站长统计</a>|<a href="mainpage.html" boss="footer_adtqqcom" style="color:#999999";>网站首页</a>|<a href="contact.html" style="color:#999999";>联系我们</a>
 <div id="copyright_div">Copyright © 2014 - 2015 Fudan. All Rights Reserved</div>
 </div>
 </div>

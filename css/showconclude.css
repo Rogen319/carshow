@@ -85,7 +85,7 @@ ul.subnav li {
 
 /*@media screen, projection*/
 .c460l {
-    width: 460px;
+    width: 600px;
 }
 
 /*@media screen, projection*/
@@ -93,35 +93,11 @@ ul.subnav li {
     float: left;
 }
 
-.PageRef_Box {
-    margin: 14px 0px 5px;
-    -moz-border-radius-bottomleft: 4px;
-    -moz-border-radius-bottomright: 4px;
-    -webkit-border-bottom-left-radius: 4px;
-    -webkit-border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-a.PageRef_BoxLink {
-    color: #fff !important;
-    cursor: hand;
-    text-decoration: none;
-}
-
-a.PageRef_BoxLink div {
-    background: url(../image/PageRef_Bg_Inactive.png);
-}
-
-a.PageRef_BoxLink:hover div {
-    background: url(../image/PageRef_Active_Background.png);
-}
-
 .my_header3{
 	width: 100%;
 	height:35px;
 	margin: 30px 0 10px 0;
-	border-bottom: medium solid #99CCFF;
+	border-bottom: medium solid #0E419C;
 }
 .my_header3 .info3 {
 	float:left;
@@ -133,40 +109,15 @@ a.PageRef_BoxLink:hover div {
 .my_header3 #my_title3{
 	font-size:18px;
 	vertical-align:middle;
-	color:#999999;
+	color:#0E419C;
 	padding-left:10px;
 	letter-spacing:9px;
   	font-weight: bold;
   	text-align: center;
 }
-/*@media screen, projection*/
-.c460l a {
-    text-decoration: underline !important;
-    color: #2ba0d1 !important;
-}
 
-a.PageRef_BoxLink div.PageRef_LinkContentBox {
-    background: url(../image/PageRef_Arrow.png) no-repeat;
-}
-
-a.PageRef_BoxLink:hover div.PageRef_LinkContentBox {
-    background: url(../image/PageRef_Arrow.png) no-repeat;
-}
-
-.PageRef_LinkContentBox {
-    margin: 0px 10px;
-    padding-left: 15px;
-    font-size: 14px;
-    overflow: hidden;
-}
-
-a.PageRef_BoxLink {
-    color: #fff !important;
-    cursor: hand;
-    text-decoration: none;
-}
-
-/*@media screen, projection*/
-.c460l a:hover {
-    color: #f60 !important;
+p{
+	text-indent: 1cm;	
+	line-height:250%;
+	font-size: 16px;
 }
