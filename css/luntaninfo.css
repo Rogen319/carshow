@@ -24,6 +24,19 @@
 	font-weight: bold;
 	font-size: 16px;	
 }
+
+#flow_text {
+	float:right;
+	width: 38%;
+	font-size: 14px;
+}
+
+#flow_text span{
+	color: #333;
+	font-weight: bold;
+	font-size: 16px;	
+}
+
 .my_header4{
 	width: 100%;
 	height:35px;
@@ -55,10 +68,104 @@
     z-index: 100;
 }
 
-#pagemain .news {
+#my_pagemain {
+    height: 360px;
+    width: 940px;
+    margin: 30px auto;
+	margin-bottom: 0px;
+    z-index: 100;
+}
+
+#pagemain .module {
     float: left;
     width: 700px;
 	height: 100%;
+}
+
+#my_pagemain .my_module {
+    float: left;
+    width: 560px;
+	height: 100%;
+}
+
+#my_pagemain .my_module_right {
+    float: right;
+    width: 360px;
+	height: 100%;
+}
+
+.my_header9{
+	width: 560px;
+	height:35px;
+	margin-bottom: 10px;
+	border-bottom: medium solid #0E419C;
+}
+.my_header9 .info9 {
+	float:left;
+}
+
+.my_header9 .info9 img{	
+	vertical-align:middle
+}
+.my_header9 #my_title9{
+	font-size:18px;
+	vertical-align:middle;
+	color:#0E419C;
+	padding-left:10px;
+	letter-spacing:9px;
+  	font-weight: bold;
+  	text-align: center;
+}
+
+.my_header9 .mr9 {
+	float:right;
+	position:relative;
+	top:3px;
+}
+
+.my_header9 .mr9 a {
+    color: #999999;
+}
+
+.my_header9 .mr9 a:hover {
+    color: #99CCFF;
+}
+
+.my_header_right{
+	width: 360px;
+	height:35px;
+	margin-bottom: 10px;
+	border-bottom: medium solid #0E419C;
+}
+.my_header_right .info_right {
+	float:left;
+}
+
+.my_header_right .info_right img{	
+	vertical-align:middle
+}
+.my_header_right #my_title_right{
+	font-size:18px;
+	vertical-align:middle;
+	color:#0E419C;
+	padding-left:10px;
+	letter-spacing:9px;
+  	font-weight: bold;
+  	text-align: center;
+}
+
+.my_header_right .mr_right {
+	float:right;
+	position:relative;
+	top:3px;
+}
+
+.my_header_right .mr_right a {
+    color: #999999;
+}
+
+.my_header_right .mr_right a:hover {
+    color: #99CCFF;
 }
 
 .download{
@@ -67,7 +174,7 @@
 }
 
 .my_header2{
-	width: 700px;
+	width: 560px;
 	height:35px;
 	margin-bottom: 10px;
 	border-bottom: medium solid #0E419C;
@@ -206,7 +313,7 @@ a.NButton {
     text-align: center;
 }
 
-#pagemain .news #textdiv1 {
+#pagemain .module #textdiv1 {
     width: 700px;
     height: 180px;
     overflow: hidden;
@@ -215,14 +322,14 @@ a.NButton {
     margin: 0px;
 }
 
-#pagemain .news #textdiv1 ul {
+#pagemain .module #textdiv1 ul {
     margin: 0 10px;
     width: 680px;
 	padding-left: 0px;
     list-style: none;
 }
 
-#pagemain .news #textdiv1 ul li {
+#pagemain .module #textdiv1 ul li {
     margin: 15px 0px 20px 0px;
     background: url(../image/dot.gif) no-repeat 0 8px !important;
     padding-left: 10px;
@@ -230,18 +337,18 @@ a.NButton {
     line-height: 18px;
 }
 
-#pagemain .news #textdiv1 ul li a {
+#pagemain .module #textdiv1 ul li a {
     color: #333;
 	font-size: 14px;
     text-decoration: none;
     background: none;
 }
 
-#pagemain .news #textdiv1 ul li a:hover {
+#pagemain .module #textdiv1 ul li a:hover {
     color: #2ba0d1;
 }
 
-#pagemain .news #textdiv1 ul li span {
+#pagemain .module #textdiv1 ul li span {
     font-weight: bold;
 	color: #333;
 	font-size: 15px;

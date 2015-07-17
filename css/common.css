@@ -45,7 +45,7 @@ body {
     margin: 0 auto;
 	padding: 10px 0;
     height: 115px;
-	
+	background: url(../image/head_bg.png);
 }
 
 #head #logo{

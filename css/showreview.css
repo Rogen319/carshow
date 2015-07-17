@@ -6,6 +6,13 @@
     overflow: hidden;
 }
 
+.slides h4{
+	height:42px; 
+	line-height:42px; 
+	font-size:22px;
+	opacity:.8;
+}
+
 /*@media screen, projection*/
 .c220l {
     margin: 0px 20px 0px 0px;
@@ -52,7 +59,7 @@ ul.subnav li a {
     padding-top: 0px;
 }
 ul.subnav li a:hover{
-	color: #99CCFF;	
+	color: #0E419C;	
 }
 ul.subnav {
     padding-bottom: 0px;
@@ -121,7 +128,7 @@ a.PageRef_BoxLink:hover div {
 	width: 100%;
 	height:35px;
 	margin: 30px 0 10px 0;
-	border-bottom: medium solid #99CCFF;
+	border-bottom: medium solid #0E419C;
 }
 .my_header3 .info3 {
 	float:left;
@@ -147,11 +154,11 @@ a.PageRef_BoxLink:hover div {
 }
 
 .my_header3 .mr3 a {
-    color: #999999;
+    color: #0E419C !important;
 }
 
 .my_header3 .mr3 a:hover {
-    color: #99CCFF;
+    color: #FF9900 !important;
 }
 
 /*@media screen, projection*/
@@ -161,7 +168,7 @@ a.PageRef_BoxLink:hover div {
 }
 
 .c460l a:hover {
-    color: #99CCFF !important;
+    color: #0E419C !important;
 }
 
 a.PageRef_BoxLink div.PageRef_LinkContentBox {
@@ -195,7 +202,7 @@ a.PageRef_BoxLink {
 }
 
 #czqy td {
-    padding: 15px 5px 15px 5px;
+    padding: 15px 10px 15px 10px;
     text-align: center;
 }
 
@@ -224,7 +231,7 @@ a.PageRef_BoxLink {
 #czqy_name .table_title{
 	font-size:18px;
 	vertical-align:middle;
-	color:#999999;
+	color:#0E419C;
 	margin: 20px 0 10px 0;
 	padding-left:10px;
 	letter-spacing:9px;
@@ -235,7 +242,7 @@ a.PageRef_BoxLink {
 #czqy_name .czqy_show td{
 	padding: 10px 5px 10px 5px;
     text-align: center;
-	border: 1px solid #B1CDE3;
+	border: 1px solid #0E419C;
 }
 
 #czqy_name .czqy_show td a{
